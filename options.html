@@ -1,0 +1,151 @@
+<html>
+<head>
+    <title>Demiart Discussion Count - options</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/styles.css?v=3.1" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<table class="wrap">
+		<tbody>
+			<tr>
+				<td class="tdwrap">
+					<div>
+						<!--img src="images/logo_demicolor.webp"	alt="logo" style="width:400px;"/>
+						<span class="help">&nbsp;HELP</span-->
+						<h2 id="nameext" style="color: #E7AA11;"></h2>
+					</div>
+					<div class="demiclass options">
+						<table class="tablefill">
+							<tbody>
+								<tr>
+									<td>
+										<div id="options">
+										<table class="tableoptions">
+											<tr>
+												<td colspan="2">
+													<table>
+														<tr>
+															<td class="left">Проверять новые комментарии:</td>
+															<td class="left value com">
+																<select id="interval"  class="forminput select">
+																	<option value="0">0 (не проверять)</option>
+																	<option value="1">1 раз в минуту</option>
+																	<option value="5">1 раз в 5 минут</option>
+																	<option value="30">1 раз в 30 минут</option>
+																	<option value="60">1 раз в час</option>
+																	<option value="1440">1 раз в сутки</option>
+																</select>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+												<table>
+													<tr>
+														<td class="left"><label for="audio_checkbox">Звуковое оповещение при новом комментарии:</label></td>
+														<td><input id="audio_checkbox" name="audio_checkbox" checked type="checkbox" class="forminput check"></td>
+													</tr>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+												<table>
+													<tr>
+														<td class="left name">Звук оповещения:</td>
+														<td class="left value">
+															<select id="sounds" class="forminput select" style="width:174px;"></select>&nbsp;<button id="playButton" class="forminput stop"></button>
+														</td>
+													</tr>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+												<table>
+													<tr>
+														<td class="left name">Громкость звука:</td>
+														<td class="left value">
+															<select id="volumeCombobox" class="forminput select" style="width:200px;"></select>
+														</td>
+													</tr>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+												<table>
+													<tr>
+														<td><label for="tab_checkbox">Открывать в той же вкладке:</label></td>
+														<td>
+															<input id="tab_checkbox" name="tab_checkbox" checked type="checkbox" class="forminput check">
+														</td>
+													</tr>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+												<table>
+													<tr>
+														<td><label for="menu_context">Контекстное меню:</label></td>
+														<td>
+															<input id="menu_context" name="menu_context" checked type="checkbox" class="forminput check">
+														</td>
+													</tr>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+												<table>
+													<tr>
+														<td><label for="favicon">Обновлять иконку на вкладках форума:</label></td>
+														<td>
+															<input id="favicon" name="favicon" checked type="checkbox" class="forminput check">
+														</td>
+													</tr>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td class="left name">Основной URL:</td>
+												<td class="left value">
+													<select id="urls" name="urls" class="forminput select" style="width:200px;"></select>
+												</td>
+											</tr>
+											<tr>
+												<td class="save" colspan="2"><button id="save" class="forminput btn">Сохранить настройки</button></td>
+											</tr>
+										</table>
+										</div>
+										<div id="flashing" style="display: none;">
+											<p><span>Спасибо, Ваши настройки сохранены.<br><br>Подождите, сейчас окно настроек будет закрыто...</p>
+											<br>
+											[<span style="font-size: 12px; color: white;"><span id="neonlight0">&#9679;</span><span id="neonlight1">&#9679;</span><span id="neonlight2">&#9679;</span><span id="neonlight3">&#9679;</span><span id="neonlight4">&#9679;</span><span id="neonlight5">&#9679;</span><span id="neonlight6">&#9679;</span><span id="neonlight7">&#9679;</span><span id="neonlight8">&#9679;</span><span id="neonlight9">&#9679;</span><span id="neonlight10">&#9679;</span><span id="neonlight11">&#9679;</span><span id="neonlight12">&#9679;</span><span id="neonlight13">&#9679;</span><span id="neonlight14">&#9679;</span><span id="neonlight15">&#9679;</span><span id="neonlight16">&#9679;</span><span id="neonlight17">&#9679;</span><span id="neonlight18">&#9679;</span><span id="neonlight19">&#9679;</span><span id="neonlight20">&#9679;</span></span>]</span>
+											<p><a href="#" id="closed">Или нажмите сюда, если не хотите ждать</a></p>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<table class="footer">
+						<tbody>
+							<tr>
+								<td><image src="images/demicat.png" alt="Деми Кот" /><br>Demiart.ru © 2000<span id="year"></span></td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+	<script src="js/jquery.js"></script>
+	<script src="js/sounds.js"></script>
+	<script src="js/options.js"></script>
+</html>

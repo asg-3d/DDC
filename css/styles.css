@@ -1,0 +1,44 @@
+/* 
+* Demiart Discussion Count (DDC) v.3.1
+* Author: asg - http://demiart.ru/forum/index.php?showuser=140748
+* Icon design: ash - http://demiart.ru/forum/index.php?showuser=1
+*/
+html{overflow-x:auto;}
+body{background-color:#2C503F;background-image:url(../images/main_bg.jpg);background-position: center center;color:#EEEEEE;font-family:Verdana,Tahoma,Arial,sans-serif;font-size:11px;margin:0px;padding:0px;text-align:center;}
+table,tr,td{font-family:Verdana,Tahoma,Arial,sans-serif;font-size:11px;color:#EEEEEE;text-align:center;vertical-align:middle;}
+button{border: 2px outset white;cursor:pointer;padding:1px 6px;}
+input:focus,select:focus,button:focus{outline:none;}
+label {display:block;cursor:pointer;}
+table.wrap{height:100%;width:100%;background-image:url('../images/icon100.png');background-repeat: no-repeat; background-position: 12px 14px;}
+table.tablefill{background-color:#213A32;border:1px solid #213A32;box-shadow: 0px 0px 5px #0D1714;height:188px;margin:0 auto;padding:6px;width:352px;}
+table.tablefill td{line-height:18px;padding:4px;text-align:center;width:100%;}
+table.footer{border:0;width:352px;margin:0 auto;}
+td.tdwrap{vertical-align:middle;}
+table.tablefill td *{line-height:18px;}
+a:link,a:visited,a:active{color:#E7AA11;text-decoration:underline;}
+a:hover{color:#F5D681;text-decoration:underline;}
+.forminput{background:#999999;font-size:11px;font-family:Verdana,Helvetica,sans-serif;vertical-align:middle;border: 1px inset #ccc;}
+select.select {-webkit-appearance: button;background-image:url(../images/select.png);background-repeat: no-repeat;background-position:right center;padding-right: 20px;}
+input.forminput.check {background-color:#999999;-webkit-appearance: button;height:18px;width:18px;margin: 0px;background-image:url(../images/uncheck.gif);background-repeat:no-repeat; background-position:center center;border-radius: 9px;cursor:pointer;}
+input.forminput.check:checked {background-image:url(../images/check.gif);}
+.forminput.btn{text-shadow: 1px 1px 1px rgba(240, 240, 240, 0.4);font-weight: bold;color: #333;font-size: 11px;height: 27px;border: 1px outset #ccc;}
+#flashing{display:none;}
+.no_underscore{border-bottom:none;}
+#audio_checkbox, #interval {margin-right:0px;}
+#playButton {width: 22px;height: 22px;padding: 0;line-height: 0;font-size: 22px;border: 1px solid #ccc;background-repeat:no-repeat; background-position:center center;}
+#playButton.stop {background-image:url(../images/play.gif);}
+#playButton.play {background-image:url(../images/stop.gif);}
+.tableoptions, .tableoptions table {border-spacing: 0;width:100%;}
+.tableoptions tr td[colspan]:nth-child(1) {padding:0;}
+.tableoptions tr td.save {padding:8px 4px 4px 4px !important;}
+.tableoptions table tr td:nth-child(1){text-align:left; padding-left:0;}
+.tableoptions table tr td:nth-child(2){text-align:right; padding-right:0;}
+.tableoptions tr td {padding-left:0; padding-right:0}
+table.tablefill.hotkey{background-color:#213A32;border:1px solid #213A32;height:188px;margin:0 auto;padding:6px;width:492px;}
+table.tablefill.hotkey{line-height: 12px;}
+.tableoptions tr td.left {text-align:left;}
+.tableoptions tr td.left.name {width:100px;}
+.tableoptions tr td.left.value {width:180px;padding-right:0px;text-align: right;}
+.tableoptions tr td.left.value.com {vertical-align:bottom;}
+.tableoptions tr td.right.value {width:364px;padding-right:0px;text-align: left;vertical-align:top;}
+.tableoptions tr td.right.name {width:102px;text-align: left;vertical-align:top;}

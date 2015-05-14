@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content=""/>
+		<meta name="keywords" content=""/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title></title>
+		
+	</head>
+	<body>
+		<div id="menu-wrapper"></div>
+		<div class="portfolio logo" data-cat="logo">
+   <div class="portfolio-wrapper">    
+    <!--a href="http://dbmast.ru"><img src="img/portfolios/logo/1.jpg" alt="" /-->
+    <div class="label">
+     <div class="label-text">
+      <!--a class="text-title">Dobrovoimaster</a-->
+      <span class="text-category">Логотип</span>
+     </div>
+     <div class="label-bg"></div>
+    </div>
+   </div>
+  </div>    
+
+  <div class="portfolio app" data-cat="app">
+   <div class="portfolio-wrapper">  
+    <!--img src="img/portfolios/app/1.jpg" alt="" /-->
+    <div class="label">
+     <div class="label-text">
+      <!--a class="text-title">Visual Infography</a-->
+      <span class="text-category">Приложения</span>
+     </div>
+     <div class="label-bg"></div>
+    </div>
+   </div>
+  </div> 
+  <script src="jquery.js"></script>
+  <script>
+	$(function(){
+		var d=document.createElement("ul"),a="";
+		$("div.portfolio").each(
+			function(){
+				var b=document.createElement("li"),
+				c=document.createElement("span");
+				a+=$(this).data("cat")+" ";
+				$(d).append($(b).append($(c).addClass("filter").attr("data-filter",$(this).data("cat")).text($(this).find("span.text-category").text())));
+			}
+		);
+		var b=document.createElement("li"),c=document.createElement("span");
+		$("#menu-wrapper").append($(d).prepend($(b).append($(c).addClass("filter active").attr("data-filter",$.trim(a)).text("\u0412\u0441\u0435"))));
+	});
+  </script>
+	</body>
+</html>
